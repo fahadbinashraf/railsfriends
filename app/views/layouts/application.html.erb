@@ -20,6 +20,9 @@
   <%# rendering the header partial under the home view %>
     <%= render 'home/header' %>
     <div class="container">
+      <% if notice%>
+        <%= render 'layouts/alerts'%>
+      <% end %>
       <%= yield %>
      </div>
 
